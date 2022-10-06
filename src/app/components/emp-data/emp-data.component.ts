@@ -12,24 +12,24 @@ export class EmpDataComponent implements OnInit {
   ngOnInit() {}
 
   displayedColumns = ['id', 'name', 'address', 'age'];
-  dataSource = new MatTableDataSource(ELEMENT_DATA);
+  dataSource = new MatTableDataSource(EMPLOYEE_DATA);
 
   applyFilter(e) {
     let filterValue = e.target.value;
-    filterValue = filterValue.trim(); // Remove whitespace
-    filterValue = filterValue.toLowerCase(); // MatTableDataSource defaults to lowercase matches
+    filterValue = filterValue.trim();
+    filterValue = filterValue.toLowerCase();
     this.dataSource.filter = filterValue;
   }
 }
 
-export interface Element {
-  name: string;
+export interface EMPLOYEE {
   id: number;
+  name: string;
   address: string;
   age: number;
 }
 
-const ELEMENT_DATA: Element[] = [
+const EMPLOYEE_DATA: EMPLOYEE[] = [
   { id: 1, name: 'San Die', address: 'San Diego', age: 79 },
   { id: 2, name: 'Happy Man', address: 'America', age: 26 },
   { id: 3, name: 'Max Syd', address: 'Mexico', age: 41 },

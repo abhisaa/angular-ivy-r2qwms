@@ -18,8 +18,6 @@ import { EmpDataComponent } from './components/emp-data/emp-data.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatTableModule } from '@angular/material/table';
 
-// import { MaterialModule, MATERIAL_SANITY_CHECKS } from '@angular/material';
-
 @NgModule({
   imports: [
     BrowserModule,
