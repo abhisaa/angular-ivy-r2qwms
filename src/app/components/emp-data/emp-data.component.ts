@@ -11,7 +11,7 @@ export class EmpDataComponent implements OnInit {
 
   ngOnInit() {}
 
-  displayedColumns = ['position', 'name', 'weight', 'symbol'];
+  displayedColumns = ['id', 'name', 'address', 'age'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
 
   applyFilter(e) {
@@ -24,30 +24,30 @@ export class EmpDataComponent implements OnInit {
 
 export interface Element {
   name: string;
-  position: number;
-  weight: number;
-  symbol: string;
+  id: number;
+  address: string;
+  age: number;
 }
 
 const ELEMENT_DATA: Element[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
-  { position: 11, name: 'Sodium', weight: 22.9897, symbol: 'Na' },
-  { position: 12, name: 'Magnesium', weight: 24.305, symbol: 'Mg' },
-  { position: 13, name: 'Aluminum', weight: 26.9815, symbol: 'Al' },
-  { position: 14, name: 'Silicon', weight: 28.0855, symbol: 'Si' },
-  { position: 15, name: 'Phosphorus', weight: 30.9738, symbol: 'P' },
-  { position: 16, name: 'Sulfur', weight: 32.065, symbol: 'S' },
-  { position: 17, name: 'Chlorine', weight: 35.453, symbol: 'Cl' },
-  { position: 18, name: 'Argon', weight: 39.948, symbol: 'Ar' },
-  { position: 19, name: 'Potassium', weight: 39.0983, symbol: 'K' },
-  { position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca' },
+  { id: 1, name: 'San Die', address: 'San Diego', age: 79 },
+  { id: 2, name: 'Happy Man', address: 'America', age: 26 },
+  { id: 3, name: 'Max Syd', address: 'Mexico', age: 41 },
+  { id: 4, name: 'Hely Sales', address: 'Africa', age: 22 },
+  { id: 5, name: 'George Boron', address: 'India', age: 11 },
+  { id: 6, name: 'Nike Carbon', address: 'Russia', age: 107 },
+  { id: 7, name: 'Nitre Milan', address: 'England', age: 67 },
+  { id: 8, name: 'Genny Wales', address: 'America', age: 94 },
+  { id: 9, name: 'Fluory Thames', address: 'India', age: 4 },
+  { id: 10, name: 'Hailey Job', address: 'Myanmar', age: 97 },
+  { id: 11, name: 'Rock John', address: 'UAE', age: 97 },
+  { id: 12, name: 'Maggy Wakes', address: 'Qatar', age: 25 },
+  { id: 13, name: 'Mazzy Tales', address: 'UAE', age: 25 },
+  { id: 14, name: 'Happy Solo', address: 'America', age: 25 },
+  { id: 15, name: 'Phospy Dramez', address: 'America', age: 38 },
+  { id: 16, name: 'Genny Job', age: 65 },
+  { id: 17, name: 'Boron Litty', age: 53 },
+  { id: 18, name: 'Daisy John', age: 48 },
+  { id: 19, name: 'Johny Sales', age: 83 },
+  { id: 20, name: 'Nike Job', age: 78 },
 ];

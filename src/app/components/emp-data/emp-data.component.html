@@ -7,12 +7,12 @@
 
   <mat-table #table [dataSource]="dataSource">
     <!-- Position Column -->
-    <ng-container matColumnDef="position">
+    <ng-container matColumnDef="id">
       <mat-header-cell class="header-align-right" *matHeaderCellDef>
-        No.
+        Id
       </mat-header-cell>
       <mat-cell class="header-align-right" *matCellDef="let element">
-        {{ element.position }}
+        {{ element.id }}
       </mat-cell>
     </ng-container>
 
@@ -25,10 +25,10 @@
     </ng-container>
 
     <!-- Weight Column -->
-    <ng-container matColumnDef="weight">
-      <mat-header-cell *matHeaderCellDef> Weight </mat-header-cell>
+    <ng-container matColumnDef="age">
+      <mat-header-cell *matHeaderCellDef> Age </mat-header-cell>
       <mat-cell class="header-align-right" *matCellDef="let element">
-        {{ element.weight }}
+        {{ element.age }}
       </mat-cell>
     </ng-container>
 
