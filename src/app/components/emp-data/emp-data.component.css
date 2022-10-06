@@ -34,3 +34,8 @@ mat-header-row {
   position: sticky;
   top: 0;
 }
+
+.emp-table-header {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  margin-left: 3vh;
+}

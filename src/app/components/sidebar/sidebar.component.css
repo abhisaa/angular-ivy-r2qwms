@@ -15,3 +15,7 @@
 .sidenavItem-last-element:hover {
   background-color: #a2a2d1;
 }
+
+.emp-data-grid {
+  height: 80vh;
+}
