@@ -23,7 +23,9 @@
     </ng-container>
 
     <ng-container matColumnDef="age">
-      <mat-header-cell *matHeaderCellDef> Age </mat-header-cell>
+      <mat-header-cell class="header-align-right" *matHeaderCellDef>
+        Age
+      </mat-header-cell>
       <mat-cell class="header-align-right" *matCellDef="let element">
         {{ element.age }}
       </mat-cell>
