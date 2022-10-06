@@ -10,6 +10,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatButtonModule } from '@angular/material/button';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   imports: [
@@ -19,6 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
     MatIconModule,
     MatListModule,
     MatButtonModule,
+    BrowserAnimationsModule,
+    MatToolbarModule,
   ],
   declarations: [
     AppComponent,
