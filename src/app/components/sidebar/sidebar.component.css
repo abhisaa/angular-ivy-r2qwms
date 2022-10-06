@@ -1,5 +1,7 @@
 .sideNavContainer {
   background: #e8e9eb;
+  height: 100%;
+  z-index: -1;
 }
 
 .sidenavItem {
