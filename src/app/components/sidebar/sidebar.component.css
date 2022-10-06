@@ -1,0 +1,15 @@
+.sideNavContainer {
+  background: #e8e9eb;
+}
+
+.sidenavItem {
+  border-bottom: 1px solid #adaeaf;
+}
+
+.sidenavItem:hover {
+  background-color: #a2a2d1;
+}
+
+.sidenavItem-last-element:hover {
+  background-color: #a2a2d1;
+}
