@@ -1,8 +1,12 @@
 /* Structure */
-.example-container {
+.emp-data-container {
   display: flex;
   flex-direction: column;
   min-width: 300px;
+  margin-top: 4%;
+  max-width: 90%;
+  margin-left: 4%;
+  max-height: 72vh;
 }
 
 .example-header {
@@ -12,10 +16,21 @@
 
 .mat-form-field {
   font-size: 14px;
-  width: 100%;
+  width: 50%;
+  float: right;
 }
 
 .mat-table {
   overflow: auto;
   max-height: 500px;
+}
+
+.header-align-right {
+  align-items: right;
+  justify-content: right;
+}
+
+mat-header-row {
+  position: sticky;
+  top: 0;
 }
