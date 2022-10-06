@@ -42,3 +42,8 @@ mat-header-row {
 .highlight-cell {
   color: #11bd11;
 }
+
+.cell-data {
+  padding-right: 1vw;
+  margin-right: 1vw;
+}
