@@ -1,23 +1,29 @@
 <div class="container">
   <app-header></app-header>
-  <mat-toolbar color="primary">
+  <!-- <mat-toolbar color="primary">
     <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
       <h1>This is the nav</h1>
     </mat-toolbar-row>
-  </mat-toolbar>
-  <mat-sidenav-container class="example-container">
-    <mat-sidenav mode="side" opened>Sidenav content</mat-sidenav>
+  </mat-toolbar> -->
+  <!-- <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened #sidenav>
+      <mat-nav-list>
+        <a mat-list-item>Home</a>
+        <a mat-list-item>About</a>
+        <a mat-list-item>Contact Us</a>
+        <a mat-list-item>Help</a>
+      </mat-nav-list>
+    </mat-sidenav>
     <mat-sidenav-content>
-      <div style="height: 70vh">
+      <div style="height: 75vh">
         <p>Main content</p>
       </div>
     </mat-sidenav-content>
-  </mat-sidenav-container>
-  <div class="SideNav">
-    <app-header></app-header>
-  </div>
-
-  <div class="content"></div>
+  </mat-sidenav-container> -->
+  <app-sidebar></app-sidebar>
 
   <app-footer></app-footer>
 </div>

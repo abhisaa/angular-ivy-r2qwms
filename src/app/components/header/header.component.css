@@ -1,8 +1,9 @@
 .header {
-  background: #039be5;
-  padding: 3px 5px;
+  background: #3f51b5;
+  color: white;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
-nav a {
+/* nav a {
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
@@ -21,4 +22,4 @@ nav a:hover {
 }
 nav a.active {
   color: #039be5;
-}
+} */
