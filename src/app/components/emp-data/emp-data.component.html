@@ -11,14 +11,21 @@
       <mat-header-cell class="header-align-right" *matHeaderCellDef>
         Id
       </mat-header-cell>
-      <mat-cell class="header-align-right" *matCellDef="let element">
+      <mat-cell
+        class="header-align-right"
+        [ngClass]="filterValue.length > 0 ? 'highlight-cell' : null"
+        *matCellDef="let element"
+      >
         {{ element.id }}
       </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="name">
       <mat-header-cell *matHeaderCellDef> Name </mat-header-cell>
-      <mat-cell *matCellDef="let element">
+      <mat-cell
+        *matCellDef="let element"
+        [ngClass]="filterValue.length > 0 ? 'highlight-cell' : null"
+      >
         {{ element.name }}
       </mat-cell>
     </ng-container>
@@ -27,14 +34,21 @@
       <mat-header-cell class="header-align-right" *matHeaderCellDef>
         Age
       </mat-header-cell>
-      <mat-cell class="header-align-right" *matCellDef="let element">
+      <mat-cell
+        class="header-align-right"
+        *matCellDef="let element"
+        [ngClass]="filterValue.length > 0 ? 'highlight-cell' : null"
+      >
         {{ element.age }}
       </mat-cell>
     </ng-container>
 
     <ng-container matColumnDef="address">
       <mat-header-cell *matHeaderCellDef> Address </mat-header-cell>
-      <mat-cell *matCellDef="let element">
+      <mat-cell
+        *matCellDef="let element"
+        [ngClass]="filterValue.length > 0 ? 'highlight-cell' : null"
+      >
         {{ element.address }}
       </mat-cell>
     </ng-container>

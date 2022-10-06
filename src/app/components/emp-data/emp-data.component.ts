@@ -13,12 +13,13 @@ export class EmpDataComponent implements OnInit {
 
   displayedColumns = ['id', 'name', 'address', 'age'];
   dataSource = new MatTableDataSource(EMPLOYEE_DATA);
+  filterValue = '';
 
   applyFilter(e) {
-    let filterValue = e.target.value;
-    filterValue = filterValue.trim();
-    filterValue = filterValue.toLowerCase();
-    this.dataSource.filter = filterValue;
+    this.filterValue = e.target.value;
+    this.filterValue = this.filterValue.trim();
+    this.filterValue = this.filterValue.toLowerCase();
+    this.dataSource.filter = this.filterValue;
   }
 }
 
